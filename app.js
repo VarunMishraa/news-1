@@ -63,7 +63,7 @@ app.post("/", function (req, res) {
     request.end();
 });
 
-app.listen(  3000, function () {
+app.listen( process.env.Port  || 3000, function () {
     console.log("Server runs on 3000");
 });
 
