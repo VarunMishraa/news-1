@@ -35,7 +35,7 @@ app.post("/", function (req, res) {
     const url = "https://us21.api.mailchimp.com/3.0/lists/6f86bb67f0";
     const options = {
         method: "POST",
-        auth: "varun:af715c7d69644c3552c04563dc0d2292-us21"
+        auth: "varun:4aa535f5bab2955f64617af547a3c960-us21"
     };
 
     const request = https.request(url, options, function (apiResponse) {
@@ -63,6 +63,7 @@ app.post("/", function (req, res) {
     request.end();
 });
 
-app.listen( process.env.Port || 3000, function () {
+app.listen(  3000, function () {
     console.log("Server runs on 3000");
 });
+
